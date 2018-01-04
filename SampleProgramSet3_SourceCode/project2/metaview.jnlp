@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0+"
+      codebase="https://people.eecs.ku.edu/~miller/JOGL/"
+      href="metaview.jnlp">
+    <information>
+        <title>Metaview: View of a View</title>
+        <vendor>James R. Miller</vendor>
+        <homepage href="https://people.eecs.ku.edu/~miller"/>
+        <description>Visualizing Viewing in 3D</description>
+        <description kind="short">Metaview</description>
+        <offline-allowed/>
+    </information>
+
+	<security> <all-permissions/> </security>
+
+    <resources>
+		<java version="1.7+" />
+        <jar href="metaview.jar" main="true" />
+		<property name="sun.java2d.noddraw" value="true"/>
+        <extension name="jogl-all-awt" href="http://jogamp.org/deployment/jogamp-current/jogl-all-awt.jnlp" />
+    </resources>
+
+    <application-desc main-class="metaview.ViewManager">
+		<argument>resources/working.txt</argument>
+    </application-desc>
+</jnlp>
